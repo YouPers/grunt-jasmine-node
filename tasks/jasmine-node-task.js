@@ -21,11 +21,11 @@ module.exports = function (grunt) {
       var matchall          = grunt.config("jasmine_node.matchall") || false;
       var autotest          = grunt.config("jasmine_node.autotest") || false;
       var useHelpers        = grunt.config("jasmine_node.useHelpers") || false;
-      var forceExit         = grunt.config("jasmine_node.forceExit") || false;
+      var forceExit         = grunt.config("jasmine_node.options.forceExit") || false;
       var useCoffee         = grunt.config("jasmine_node.useCoffee") || false;
       var captureExceptions = grunt.config("jasmine_node.captureExceptions") || false;
       var growl             = grunt.config("jasmine_node.growl") || false;
-      var junitreport       = grunt.config("jasmine_node.junitreport");
+      var junitreport       = grunt.config("jasmine_node.options.junitreport");
 
       var isVerbose         = grunt.config("jasmine_node.verbose") || true;
       var showColors        = grunt.config("jasmine_node.colors") || true;
